@@ -1,0 +1,6 @@
+FileName: 	wuhanOD.txt
+#Nodes:  	21568
+#Max_iteration: 60
+#blockSize:	64	
+#blockSize2: 	2	
+
