@@ -1,0 +1,16 @@
+############ Data and source code for stochastic all-pair shortest path routing (SAPSPAR) #############
+
+under ./data folder
+*params.txt: 	parameter file for all-pair shortest path calculation
+*wuhanOD.txt: 	example input OD matrix of distance or travel time for shortest path calculation; about 1.5G, within data.zip 
+*next.txt: 		example input OD matrix of predecessors for travel time resampling using Monte Carlo approach; about 2.5G, within data.zip
+*data.zip: 		zip file includidng wuhanOD.txt and next.txt, one of the OD matrices of travel time and predecessors
+*cdf.txt: 		probability look up table (cumulative probability)
+*./Wuhan: 		shapefiles and edge files of road network of Wuhan
+
+under main folder
+*simulation.py:			Python source code for the simulation of link travel time (road segment level) of a road network
+*path_floyd.cpp: 		C++ source code for CPU-based all-pair shortest path calculation
+*path_resample_sub.cpp: C++ source code for CPU-based path travel time estimation via Monte Carlo-based resampling, including a row-wise domain decomposition
+*path_floyd.cu: 		CUDA source code for GPU-based parallel all-pair shortest path calculation
+*path_resample.cu: 		CUDA source code for GPU-based parallel travel time resampling using Monte Carlo approach, includidng two steps: path extraction and Monte Carlo-based resampling of travel time 
