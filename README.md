@@ -20,7 +20,7 @@ SAPSPAR (Stochastic All-Pair Shortest Path Routing) is a parall computing framew
 
 **params.txt**: 	parameter file for all-pair shortest path calculation
 
-**wuhanOD.txt**: 	example input OD matrix of distance or travel time for shortest path calculation; about 1.5G, within data.zip (provide a link to the zip file; too big)
+**wuhanOD.txt**: 	example input OD matrix (using Wuhan city of China here) of distance or travel time for shortest path calculation; about 1.5G, within data.zip (provide a link to the zip file; too big)
 
 **next.txt**: 		example input OD matrix of predecessors for travel time resampling using Monte Carlo approach; about 2.5G, within data.zip (provide a link to the zip file; too big)
 
