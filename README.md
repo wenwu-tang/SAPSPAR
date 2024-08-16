@@ -2,9 +2,9 @@
 SAPSPAR (Stochastic All-Pair Shortest Path Routing) is a parall computing framework and software implementation for computing all-pair shortest paths (APSP) within stochastic road networks accelerated using Graphics Processing Units (GPUs). The computing of APSP within stochastic road networks is extremely computationally considerable. SAPSPAR here provides a solution that makes this computing feasible. 
 
 
-############ Data and source code for stochastic all-pair shortest path routing (SAPSPAR) #############
+# Data and source code for stochastic all-pair shortest path routing (SAPSPAR) 
 
-under main folder
+## under main folder
 
 *simulation.py:			Python source code for the simulation of link travel time (road segment level) of a road network
 
@@ -16,7 +16,7 @@ under main folder
 
 *path_resample.cu: 		CUDA source code for GPU-based parallel travel time resampling using Monte Carlo approach, includidng two steps: path extraction and Monte Carlo-based resampling of travel time 
 
-under ./data folder
+## under ./data folder
 
 *params.txt: 	parameter file for all-pair shortest path calculation
 
